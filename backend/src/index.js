@@ -16,5 +16,4 @@ app.use(routes);
             Entidades: Ong, Caso
             Funcionalidades: Login, Logout, Cadastro Ong, Cadastror novo caso, Deletar Caso, Listar Casos da Ong, LIstar todos Casos, Contato com Ong.
 */
-
 app.listen(3333);
