@@ -18,15 +18,14 @@ module.exports = {
                 'ongs.city',
                 'ongs.uf'
             ]);
+            console.log(incidents);
         res.header('X-Total-Count',count['count(*)'])
         return res.json(incidents);
-    
     },
 
     async create(req, res){
-        const { title, description, value} = req.body;
+        const {title, description, value} = req.body;
         const ong_id = req.headers.authorization;
-
         const [id] = await connection('incidents').insert({
             title,
             description,
